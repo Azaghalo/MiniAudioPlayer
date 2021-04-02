@@ -15,7 +15,7 @@ let volumeBar = document.getElementById("volume")
 
 let musicIndex = 0
 
-audio.volume = 0.05;
+audio.volume = volumeBar.value;
 
 function Retroceder(){
     if(musicIndex > 0){
