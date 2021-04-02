@@ -1,0 +1,142 @@
+body{
+    background-image: url("../Assets/BackGround.gif");
+    background-repeat: repeat;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{
+    margin: auto;
+    margin-top: 8px;
+    width: 95%;
+    background-color: #5fac92;
+    font-size: 1.2rem;
+    border-radius: 10px 10px 0px 0px;
+    color: rgb(198, 222, 223);
+}
+
+.container{
+    margin: auto;
+    margin-top: 50px;
+    width: 330px;
+    height: 500px;
+    text-align: center;
+    background-color: rgb(39, 54, 52);
+    border-radius: 20px;
+    padding: 10px 0px 23px 0px;
+}
+
+.audioContainer{
+    position: relative;
+    background-color: #111010;
+    width: 95%;
+    height: 90%;
+    margin: auto;    
+    margin-top: 0px;
+    padding-top: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.volumeControls{
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    background-color: rgba(47, 79, 79, 0.63);
+    border-radius: 10px;
+}
+
+.volumeBtn{
+    margin: 4px 0px 0px 5px;
+}
+
+.volumeBtn:hover{
+    transform: scale(1.2);
+}
+
+#volume{
+    -webkit-appearance: none;
+    transform: translateY(-25%);
+    outline: none;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: rgba(49, 75, 75, 0.582);
+    margin-right: 5px;
+}
+
+#volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 2%;
+    height:16px;
+    background: #4CAF50;
+    box-shadow: -100vw 0 0 100vw #4CAF50;
+}
+
+.audioIMG{
+    margin: auto;
+    display: block;
+    width: 92%;    
+    min-height: 320px;
+    max-height: 320px;
+    margin-bottom: 10px;
+}
+
+.progressBar{
+    position: relative;
+    width: 85%;
+    height: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    color: #b3ddcf;
+}
+
+#timerDisplay{
+    position: absolute;
+    left: 38%;
+    top: 5%;
+    pointer-events: none;
+    padding: 0px;
+    margin: 0px;
+    text-shadow: 0.5px 0.5px rgb(0, 0, 0);
+}
+
+.bar{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgba(49, 75, 75, 0.582);
+    border-radius: 5px;
+    outline: none;
+}
+
+.bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2%;
+    height: 100px;
+    background: #4CAF50;
+    box-shadow: -100vw 0 0 100vw #4CAF50;
+}
+
+.repeatImg{
+    width: 20px;
+    padding-left: 2px;
+    transform: translateY(-5%);
+}
+
+.repeatImg:hover{
+    transform: scale(1.3) translateY(-5%);
+}
+
+.audioBtn{    
+    width: 50px;
+    padding: 8px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.audioBtn:hover{
+    transform: scale(1.3);
+}

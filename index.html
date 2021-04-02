@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrotify</title>
+    <link rel="shortcut icon" href="./Assets/headphones.svg" />
+    <link rel="stylesheet" href="./Style/style.css">
+    
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <div class="songName">
+            <h1 id="name">Lost in Paradise .feat - AKLO</h1>
+        </div>
+
+        <div class="audioContainer">
+
+            <div class="volumeControls">
+                <img onclick="Mute()" class="volumeBtn" src="./Assets/volume-2.svg">
+                <input type="range" id="volume" step="0.01" value="0.5" min="0" max="1" onchange="MusicVolume(this.value)">
+            </div>
+
+            <img id="musicImg" class="audioIMG" src="./Assets/JUJUTSU_KAISEN-IMG.jpg">
+            <audio id="audio1" src="./Assets/JUJUTSU KAISEN - Lost in Paradise .feat - AKLO.mp3"></audio>
+
+            <div class="progressBar">
+                <div id="timerDisplay">03.20 / 03.50</div>
+                <input type="range" class="bar" id="timerBar" value="0" min="0">
+            </div>
+
+            <img onclick="Loop()" class="repeatImg" src="./Assets/repeat.svg">
+            <img onclick="Retroceder()" class="audioBtn" src="./Assets/arrow-left-circle.svg">
+            <img id="playImg" onclick="Play()" class="audioBtn" src="./Assets/play-circle.svg">
+            <img onclick="Parar()" class="audioBtn" src="./Assets/stop-circle.svg">
+            <img onclick="Avancar()" class="audioBtn" src="./Assets/arrow-right-circle.svg">
+
+        </div>
+
+    </div>
+
+    <script src="./Script/script.js"></script>
+</body>
+
+</html>
