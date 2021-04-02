@@ -1,2 +1,3 @@
 # MiniAudioPlayer
-Projeto para estudo
+
+Project developed as part of my WebDevelopment studies.
